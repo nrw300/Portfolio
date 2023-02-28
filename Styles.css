@@ -298,7 +298,6 @@ body.dark .switch::before{
     font-size: 20px;
     font-weight: 500;
     color: var(--text-color);
-    padding: 12px 30px;
 }
 
 .home .icon {
@@ -319,24 +318,25 @@ body.dark .home .text{
 /* -- contact-body -- */
 .contact-body {
     position: relative;
-    height: 80%;
     width: 90%;
     top: 5%;
     left: 5%;
-/*    background-color: #98C8BE;*/
+    text-align: left;
     color: var(--form-color); 
     border: 2px solid #98C8BE;
     border-radius: 20px;
+    
 }
 
 .home li {
     height: 50px;
-    width: 15%;
     list-style: none;
     display: inline-block;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 15px;
+    padding-right: 15px;
+    text-align: left;
 }
 
 .home li a{
@@ -344,11 +344,17 @@ body.dark .home .text{
     height: 100%;
     background-color: transparent;
     display: flex;
+    gap: 1rem;
     align-items: center;
     width: 100%;
     border-radius: 10px;
     text-decoration: none;
     transition: var(--tran-03);
+
+}
+
+.home li:last-child {
+    margin-bottom: 15px;
 }
 
 .home li a:hover{
@@ -362,5 +368,16 @@ body.dark .home .text{
 
 body.dark .home li a:hover .icon,
 body.dark .home li a:hover .text{
-    color: var(--text-color);
+    color: var(--sidebar-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+}
+@media only screen and (max-width: 770px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
