@@ -71,6 +71,16 @@
 
         <section class="home">
             <div class="text">Home</div>
+            <div class="home-body">
+                <div class="card">
+                    <div class="photo">
+                        <img src="images/njord.jpg" class="home-image">
+                    </div>
+                    <div class="photo-back">
+                        <span class="text nav-text">Hello, I’m Njord-Romijn Witsiers and I welcome you to my page. <br> I’m 19 years old and I live in the Netherlands. <br> I study “Creative Technology” at the Roc in Nijmegen. <br> I’ve also a job at “Jan Linders Supermarkten” in Nieuw-Bergen where I work around 4 times a week.<br> I’m born at the 8th of March in 2004 in Nijmegen.</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script>
@@ -81,7 +91,6 @@
             modeSwitch = body.querySelector(".toggle-switch"),
             modeText = body.querySelector(".mode-text");
 
-
             toggle.addEventListener("click" , () =>{
                 sidebar.classList.toggle("close");
             })
@@ -91,8 +100,7 @@
                 
                 if(body.classList.contains("dark")){
                     modeText.innerText = "Light mode";
-                }
-                else{
+                }else{
                     modeText.innerText = "Dark mode";
                 }
             });
