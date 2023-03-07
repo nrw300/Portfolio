@@ -452,6 +452,7 @@ body.dark .home li a:hover .text{
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5px;
 }
+
 @media only screen and (max-width: 770px) {
     .grid {
         grid-template-columns: 1fr;

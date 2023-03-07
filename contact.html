@@ -2,6 +2,9 @@
     <head>
         <title>Njord-Romijn Witsiers</title>
 
+        <!----========= Logo ========= -->
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+
         <!----======== CSS ======== -->
         <link rel="stylesheet" href="Styles.css">
         
@@ -9,7 +12,7 @@
         <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
         <style type="text/css" id="operaUserStyle"></style>
     </head>
-    <body class="dark">
+    <body >
         <nav class="sidebar close">
             <header>
                 <div class="image-text">
@@ -177,35 +180,9 @@
                             <span class="text nav-text">Youtube</span>
                         </a>
                     </li>
-
-                    
-
-                    
                 </div>
             </div>
         </section>
-
-        <script>
-            const body = document.querySelector('body'),
-            sidebar = body.querySelector('nav'),
-            toggle = body.querySelector(".toggle"),
-            searchBtn = body.querySelector(".search-box"),
-            modeSwitch = body.querySelector(".toggle-switch"),
-            modeText = body.querySelector(".mode-text");
-
-            toggle.addEventListener("click" , () =>{
-                sidebar.classList.toggle("close");
-            })
-
-            modeSwitch.addEventListener("click" , () =>{
-                body.classList.toggle("dark");
-                
-                if(body.classList.contains("dark")){
-                    modeText.innerText = "Light mode";
-                }else{
-                    modeText.innerText = "Dark mode";
-                }
-            });
-        </script>
-    
-</body></html>
+        <script src="darkmode.js"></script>
+    </body>
+</html>

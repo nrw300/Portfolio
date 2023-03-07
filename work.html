@@ -2,6 +2,9 @@
 	<head>
 	    <title>Njord-Romijn Witsiers</title>
 
+	    <!----========= Logo ========= -->
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+
 	    <!----======== CSS ======== -->
 	    <link rel="stylesheet" href="Styles.css">
 	    
@@ -48,20 +51,6 @@
 	                            <span class="text nav-text">Work</span>
 	                        </a>
 	                    </li>
-
-	                    <li class="nav-link">
-	                        <a href="https://github.com/nrw300" target="_blank">
-	                            <i class='bx bxl-github icon'></i>
-	                            <span class="text nav-text">Github</span>
-	                        </a>
-	                    </li>
-
-	                    <li class="nav-link">
-	                        <a href="https://www.linkedin.com/in/njord-romijn-witsiers-a61828222/" target="_blank">
-	                            <i class='bx bxl-linkedin-square icon'></i>
-	                            <span class="text nav-text">LinkedIn</span>
-	                        </a>
-	                    </li>
 	                </ul>
 	            </div>
 
@@ -79,39 +68,13 @@
 	                </li>
 	            </div>
 	        </div>
-
-	        
-
 	    </nav>
-
 	    <section class="home">
 	        <div class="text">Work</div>
 	        <div class="work-body">
-	        	<span class="work-text">hallo</span>
+	        	<!-- <span class="work-text">hallo</span> -->
 	        </div>
 	    </section>
-
-	    <script>
-	        const body = document.querySelector('body'),
-	      	sidebar = body.querySelector('nav'),
-	      	toggle = body.querySelector(".toggle"),
-	     	searchBtn = body.querySelector(".search-box"),
-	      	modeSwitch = body.querySelector(".toggle-switch"),
-	      	modeText = body.querySelector(".mode-text");
-
-			toggle.addEventListener("click" , () =>{
-			    sidebar.classList.toggle("close");
-			})
-
-			modeSwitch.addEventListener("click" , () =>{
-	    		body.classList.toggle("dark");
-	    
-	    		if(body.classList.contains("dark")){
-	        		modeText.innerText = "Light mode";
-	    		}else{
-	        		modeText.innerText = "Dark mode";
-	    		}
-		});
-	    </script>
+	    <script src="darkmode.js"></script>
 	</body>
 </html>

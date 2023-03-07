@@ -3,7 +3,7 @@
         <title>Njord-Romijn Witsiers</title>
 
         <!----========= Logo ========= -->
-        <link rel="icon" href="images/logo.png" type="image/x-icon" >
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
 
         <!----======== CSS ======== -->
         <link rel="stylesheet" href="Styles.css">
@@ -53,7 +53,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="bottom-content">
                     <li class="mode">
                         <div class="sun-moon">
@@ -66,12 +65,9 @@
                             <span class="switch"></span>
                         </div>
                     </li>
-                    
                 </div>
             </div>
-
         </nav>
-
         <section class="home">
             <div class="text">Home</div>
             <div class="home-body">
@@ -80,33 +76,27 @@
                         <img src="images/njord.jpg" class="home-image">
                     </div>
                     <div class="photo-back">
-                        <span class="text nav-text">Hello, I’m Njord-Romijn Witsiers and I welcome you to my page. <br> I’m 19 years old and I live in the Netherlands. <br> I study “Creative Technology” at the Roc in Nijmegen. <br> I’ve also a job at “Jan Linders Supermarkten” in Nieuw-Bergen where I work around 4 times a week.<br> I’m born at the 8th of March in 2004 in Nijmegen.</span>
+                        <span class="text nav-text">
+                            Hi, I am Njord-Romijn Witsiers.
+                            <br> I am 19 years old and I live in the Netherlands. 
+                            <br> I study Creative Technology at the Roc in Nijmegen. 
+                            <br> I have a job at Jan Linders Supermarkten.
+                            <br> I like to play some games and workout in the gym.
+                        </span>
                     </div>
                 </div>
+                <!-- <div class="card">
+                    <div class="photo">
+                        <img src="images/logo.png" class="home-image">
+                    </div>
+                    <div class="photo-back">
+                        <span class="text nav-text">
+                            hello
+                        </span>
+                    </div>
+                </div> -->
             </div>
         </section>
-
-        <script>
-            const body = document.querySelector('body'),
-            sidebar = body.querySelector('nav'),
-            toggle = body.querySelector(".toggle"),
-            searchBtn = body.querySelector(".search-box"),
-            modeSwitch = body.querySelector(".toggle-switch"),
-            modeText = body.querySelector(".mode-text");
-
-            toggle.addEventListener("click" , () =>{
-                sidebar.classList.toggle("close");
-            })
-
-            modeSwitch.addEventListener("click" , () =>{
-                body.classList.toggle("dark");
-                
-                if(body.classList.contains("dark")){
-                    modeText.innerText = "Light mode";
-                }else{
-                    modeText.innerText = "Dark mode";
-                }
-            });
-        </script>
+        <script src="darkmode.js"></script>
     </body>
 </html>
