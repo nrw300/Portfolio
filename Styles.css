@@ -317,6 +317,18 @@ body.dark .home .text{
     color: var(--text-color);
 }
 
+/* -- warning-body -- */
+.warning-body{
+    position: absolute;
+    width: 40%;
+    height: 35px;
+    left: 30%;
+    top: 30%;
+    color: var(--form-color); 
+    border: 2px solid #98C8BE;
+    border-radius: 20px;
+}
+
 /* -- home-body -- */
 .home-body {
     position: relative;
