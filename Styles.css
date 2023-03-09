@@ -298,7 +298,7 @@ body.dark .switch::before{
     font-size: 20px;
     font-weight: 500;
     color: var(--text-color);
-    padding-left: 3%;
+    padding-left: 5%;
     padding-top: 1%;
 }
 
