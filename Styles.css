@@ -62,34 +62,6 @@ body.dark{
 }
 
 /* ===== Reusable code ===== */
-.sidebar li .tooltip {
-    position: absolute;
-    top: -20px;
-    left: calc(100% + 15px);
-    z-index: 3;
-    background: var(--body-color);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    border: 2px solid #98C8BE;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 400;
-    opacity: 0;
-    white-space: nowrap;
-    pointer-events: none;
-    transition: 0s;
-}
-.sidebar li:hover .tooltip {
-    opacity: 1;
-    pointer-events: auto;
-    transition: all 0.4s ease;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.sidebar.open li .tooltip {
-    display: none;
-}
-
 .sidebar li{
 /*    position: relative;*/
     height: 50px;
@@ -129,6 +101,40 @@ body.dark{
 }
 .sidebar.close .text{
     opacity: 0;
+}
+
+.sidebar li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: var(--body-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #98C8BE;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+}
+.sidebar li:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sidebar.open li .tooltip {
+    display: none;
+}
+
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
 }
 /* =========================== */
 
@@ -197,25 +203,6 @@ body.dark .sidebar header .toggle{
     margin-top: 50px;
 }
 
-.sidebar li.search-box{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    cursor: pointer;
-    transition: var(--tran-05);
-}
-
-.sidebar li.search-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: var(--tran-05);
-}
 .sidebar li a{
     list-style: none;
     height: 100%;
