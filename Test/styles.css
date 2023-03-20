@@ -6,16 +6,44 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --form-color : #98C8BE;
+    --sidebar-color: #FFF;
+    --primary-color: #004466;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 .sidebar{
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 78px;
-  background: #11101D;
+  background: var(--sidebar-color);
   padding: 6px 14px;
   z-index: 99;
-  transition: all 0.5s ease;
+  transition: var(--tran-05);
 }
 .sidebar.open{
   width: 250px;
@@ -28,14 +56,14 @@
 }
 .sidebar .logo-details .icon{
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: var(--tran-05);
 }
 .sidebar .logo-details .logo_name{
-  color: #fff;
+  color: var(--text-color);
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: var(--tran-05);
 }
 .sidebar.open .logo-details .icon,
 .sidebar.open .logo-details .logo_name{
@@ -47,17 +75,17 @@
   right: 0;
   transform: translateY(-50%);
   font-size: 22px;
-  transition: all 0.4s ease;
+  transition: var(--tran-04);
   font-size: 23px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: var(--tran-05);
 }
 .sidebar.open .logo-details #btn{
   text-align: right;
 }
 .sidebar i{
-  color: #fff;
+  color: var(--text-color);
   height: 60px;
   min-width: 50px;
   font-size: 28px;
@@ -78,7 +106,7 @@
   top: -20px;
   left: calc(100% + 15px);
   z-index: 3;
-  background: #fff;
+  background: var(--body-color);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
   border-radius: 4px;
@@ -92,47 +120,14 @@
 .sidebar li:hover .tooltip{
   opacity: 1;
   pointer-events: auto;
-  transition: all 0.4s ease;
+  transition: var(--tran-04);
   top: 50%;
   transform: translateY(-50%);
 }
 .sidebar.open li .tooltip{
   display: none;
 }
-.sidebar input{
-  font-size: 15px;
-  color: #FFF;
-  font-weight: 400;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  width: 50px;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.5s ease;
-  background: #1d1b31;
-}
-.sidebar.open input{
-  padding: 0 20px 0 50px;
-  width: 100%;
-}
-.sidebar .bx-search{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 22px;
-  background: #1d1b31;
-  color: #FFF;
-}
-.sidebar.open .bx-search:hover{
-  background: #1d1b31;
-  color: #FFF;
-}
-.sidebar .bx-search:hover{
-  background: #FFF;
-  color: #11101d;
-}
+
 .sidebar li a{
   display: flex;
   height: 100%;
@@ -140,14 +135,14 @@
   border-radius: 12px;
   align-items: center;
   text-decoration: none;
-  transition: all 0.4s ease;
-  background: #11101D;
+  transition: var(--tran-04);
+  background: transparent;
 }
 .sidebar li a:hover{
-  background: #FFF;
+  background: var(--primary-color);
 }
 .sidebar li a .links_name{
-  color: #fff;
+  color: var(--text-color);
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
@@ -161,8 +156,8 @@
 }
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i{
-  transition: all 0.5s ease;
-  color: #11101D;
+  transition: var(--tran-05);
+  color: #fff;
 }
 .sidebar li i{
   height: 50px;
@@ -177,8 +172,8 @@
   left: 0;
   bottom: -8px;
   padding: 10px 14px;
-  background: #1d1b31;
-  transition: all 0.5s ease;
+  background: var(--primary-color-light);
+  transition: var(--tran-05);
   overflow: hidden;
 }
 .sidebar.open li.profile{
@@ -200,28 +195,13 @@
 .sidebar li.profile .job{
   font-size: 15px;
   font-weight: 400;
-  color: #fff;
+  color: var(--text-color);
   white-space: nowrap;
 }
 .sidebar li.profile .job{
   font-size: 12px;
 }
-.sidebar .profile #log_out{
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background: #1d1b31;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 0px;
-  transition: all 0.5s ease;
-}
-.sidebar.open .profile #log_out{
-  width: 50px;
-  background: none;
-}
+
 .home-section{
   position: relative;
   background: #E4E9F7;
@@ -229,7 +209,7 @@
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
-  transition: all 0.5s ease;
+  transition: var(--tran-05);
   z-index: 2;
 }
 .sidebar.open ~ .home-section{
