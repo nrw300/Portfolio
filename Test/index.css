@@ -1,0 +1,73 @@
+/* -- CSS of the index-page layout */
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --form-color : #98C8BE;
+    --sidebar-color: #FFF;
+    --primary-color: #004466;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --border-color: #98C8BE;
+
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+}
+
+.index-section{
+  position: relative;
+  background: var(--body-color);
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: var(--tran-05);
+  z-index: 2;
+}
+.sidebar.open ~ .index-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.index-section .text{
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+
+.index-body{
+  position: relative;
+  width: 90%;
+  top: 30px;
+  left: 5%;
+  text-align: left;
+  color: var(--form-color); 
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+}
+
+.index-text{
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+
+/* -- images -- */
+.index-image{
+  position: relative;
+/*  height: 10%;*/
+  width: 10%;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  margin-top: 2%;
+}
+
+.img{
+  height: 5%;
+}
