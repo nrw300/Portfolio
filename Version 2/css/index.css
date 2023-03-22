@@ -44,7 +44,7 @@
   width: 90%;
   top: 30px;
   left: 5%;
-  text-align: left;
+  text-align: center;
   color: var(--form-color); 
   border: 2px solid var(--border-color);
   border-radius: 20px;
@@ -61,13 +61,9 @@
 /* -- images -- */
 .index-image{
   position: relative;
-/*  height: 10%;*/
-  width: 10%;
+  height: 300px;
+  width: 210px;
   border: 2px solid var(--border-color);
   border-radius: 20px;
   margin-top: 2%;
-}
-
-.img{
-  height: 5%;
 }
