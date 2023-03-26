@@ -14,3 +14,16 @@ function menuBtnChange() {
    closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the icons class
  }
 }
+
+sortBtn.addEventListener("click", ()=>{
+  career.classList.toggle("top");
+  timelineBtnChange();
+});
+
+function timelineBtnChange() {
+  if (sidebar.classList.contains("top")) {
+    sortBtn.classList.replace("bx-vertical-bottom", "bx-vertical-top");
+  } else {
+    sortBtn.classList.replace("bx-vertical-top", "bx-vertical-bottom");
+  }
+}
