@@ -1,6 +1,9 @@
 sidebar = document.querySelector(".sidebar");
 closeBtn = document.querySelector("#btn");
 
+timeline = document.querySelector(".timeline-body");
+sortBtn = document.querySelector("#sort_btn");
+
 closeBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("open");
   menuBtnChange();//calling the function(optional)
@@ -21,7 +24,7 @@ sortBtn.addEventListener("click", ()=>{
 });
 
 function timelineBtnChange() {
-  if (sidebar.classList.contains("top")) {
+  if (timeline.classList.contains("top")) {
     sortBtn.classList.replace("bx-vertical-bottom", "bx-vertical-top");
   } else {
     sortBtn.classList.replace("bx-vertical-top", "bx-vertical-bottom");
