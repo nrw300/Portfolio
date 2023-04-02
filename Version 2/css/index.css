@@ -58,6 +58,14 @@
   margin: 18px
 }
 
+.index-text-minor{
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 350;
+  margin: 18px
+}
+
 /* -- images -- */
 .index-image{
   position: relative;

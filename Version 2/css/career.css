@@ -95,7 +95,14 @@
     color: var(--text-color);
     font-size: 25px;
     font-weight: 500;
-  }
+}
+
+.twee{
+  position: absolute;
+  left: 49%;
+  top: 1%;
+  font-size: 30px;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
