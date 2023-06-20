@@ -1,0 +1,12 @@
+/* css/dark-mode.css */
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.sidebar {
+  background-color: #333;
+}
+
+/* Add more styles for dark mode as needed */

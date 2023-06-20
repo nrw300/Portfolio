@@ -11,6 +11,9 @@
     <!----===== Stylesheet Link =====---->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+    <!--===== Dark Mode CSS =====-->
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode-style">
 
     <!----===== Boxicons Link =====---->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -101,7 +104,18 @@
       </div>
     </section>
     
-    <script src="javascript.js"></script>
-  
+    <script src="JavaScript/sidebar.js"></script>
+    <script>
+      const toggleSwitch = document.querySelector('.toggle-switch');
+      const darkModeStyle = document.querySelector('#dark-mode-style');
+
+      toggleSwitch.addEventListener('click', () => {
+        if (darkModeStyle.getAttribute('href') === 'css/dark-mode.css') {
+          darkModeStyle.href = '';
+        } else {
+          darkModeStyle.href = 'css/dark-mode.css';
+        }
+      });
+    </script>
   </body>
 </html>
