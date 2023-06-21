@@ -75,3 +75,13 @@
   border-radius: 20px;
   margin-top: 2%;
 }
+
+.image-styled {
+  background-position: center;
+  background-size: cover;
+  background-image: src("images/IMG.png");
+  display: flex;
+  height: 50%;
+  width: 50%;
+  transition: background 0.5 linear;
+}
